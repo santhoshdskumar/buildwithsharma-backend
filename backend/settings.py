@@ -26,7 +26,12 @@ SECRET_KEY = "django-insecure-t9!%fy(x^$1*(u)1=1slx_kp2m$$jh1n$1=^zwk8@ao7q@3i^3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'buildwithsharma.com',
+    'www.buildwithsharma.com',
+]
 
 
 # Application definition
@@ -132,6 +137,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:5173",
+    "https://buildwithsharma.com",
+    "https://www.buildwithsharma.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
